@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Jun 30 11:27:57 2018
+        MODULE ENTHSAT__genmod
+          INTERFACE 
+            FUNCTION ENTHSAT(TDB,BAROPRESSURE)
+              REAL(KIND=4) :: TDB
+              REAL(KIND=4) :: BAROPRESSURE
+              REAL(KIND=4) :: ENTHSAT
+            END FUNCTION ENTHSAT
+          END INTERFACE 
+        END MODULE ENTHSAT__genmod

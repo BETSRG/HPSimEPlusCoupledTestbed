@@ -1,0 +1,44 @@
+/* GenOpt example command file
+   MWetter@lbl.gov, 06/18/2003
+*/
+Vary{
+  /*Parameter{   // Condenser Fan Power
+    Name    = CndAirFlw;
+    Min     =   2680;
+    Ini     =   3350;
+    Max     =   3350;
+    Step    =    100;
+  }*/
+  /*Parameter{   // Condenser Fan Power
+    Name    = EvpAirFlw;
+    Min     =   800;
+    Ini     =   812.5;
+    Max     =   1000;
+    Step    =    50;
+  }*/
+  Parameter{   // Compressor Mass Flow Rate
+    Name    = CompMdot;
+    Min     =   0.8; //0.8; //.8; //.8;
+    Ini     =   0.8; //0.9; //.9; //.9;
+    Max     =   1; //1;
+    Step    =   0.1; //.01;
+  }
+}
+
+OptimizationSettings{
+  MaxIte = 2000;
+  MaxEqualResults = 100;
+  WriteStepNumber = false;
+  UnitsOfExecution = 0;
+}
+
+Algorithm{
+ Main = GPSHookeJeeves;
+ //MultiStart = Uniform;	//For Multiple Initial Points
+ //Seed = 3;	//For Multiple Initial Points
+ //NumberOfInitialPoint = 2; //3;	//For Multiple Initial Points
+ MeshSizeDivider = 2;
+ InitialMeshSizeExponent = 0;
+ MeshSizeExponentIncrement = 1;
+ NumberOfStepReduction = 1; //4;
+}

@@ -1,0 +1,96 @@
+ 
+     Title (ver. 2.0 12/17/09): ,TXV Simulation, Cooling Mode                      
+ 
+*** System Performance Summary ***
+ 
+ Evaporator gross capacity       ,                               21320.098, (Btu/h)       
+ Condenser gross capacity        ,                               24863.252, (Btu/h)       
+ Gross sensible capacity         ,                               21320.098, (Btu/h)       
+ Gross latent capacity           ,                                   0.000, (Btu/h)       
+ Compressor power                ,                                 983.609, (W)           
+ Condenser Fan power             ,                                  20.899, (W)           
+ Total Power                     ,                                1010.129, (W)           
+ Refrigerant mass flow rate      ,                                 269.421, (lbm/h)       
+ COP (coefficient of performance),                                   6.172, (-)           
+ EER (energy efficiency ratio)   ,                                  21.087, (Btu/W-hr)    
+ SHR (sensible heat ratio)       ,                                   1.000, (-)           
+ Condenser subcooling            ,                                   3.530, (R)           
+ Expansion device subcooling     ,                                   3.347, (R)           
+ Evaporator superheat            ,                                   8.514, (R)           
+ Compressor superheat            ,                                   8.400, (R)           
+ System charge                   ,                                  37.419, (lbm)         
+ Refrigerant in compressor       ,                                   0.000, (lbm)         
+ Refrigerant in condenser        ,                                  33.926, (lbm)         
+ Refrigerant in evaporator       ,                                   1.410, (lbm)         
+ Refrigerant in suction line     ,                                   0.127, (lbm)         
+ Refrigerant in discharge line   ,                                   0.016, (lbm)         
+ Refrigerant in liquid line      ,                                   1.396, (lbm)         
+ Refrigerant in distributor tubes,                                   0.545, (lbm)         
+ Refrigerant in accumulator      ,                                   0.000, (lbm)         
+ Short tube diameter             ,                                   0.061, (in)          
+ TXV capacity                    ,                                   1.490, (ton)         
+ Capillary tube diameter         ,                                   0.085, (in)          
+ Capillary tube length           ,                                  12.000, (in)          
+ 
+***** Refrigerant Side Data *****
+ 
+ Location               ,   Temperature (F),   Pressure (psig),   Enthalpy (Btu/lbm),   Saturation Temperature (F),   Quality (%),   Subcooling (R),   Superheat (R),   Location               
+ Compressor suction     ,            57.950,            83.337,              177.173,                       49.550,         100.0,            0.000,           8.400,   Compressor suction     
+ Compressor discharge   ,           143.449,           143.603,              190.351,                       79.974,         100.0,            0.000,          63.475,   Compressor discharge   
+ Condenser inlet        ,           143.396,           143.342,              190.351,                       79.864,         100.0,            0.000,          63.532,   Condenser inlet        
+ Condenser outlet       ,            74.253,           138.523,               98.185,                       77.783,           0.0,            3.530,           0.000,   Condenser outlet       
+ Expansion device inlet ,            74.253,           138.107,               98.185,                       77.599,           0.0,            3.347,           0.000,   Expansion device inlet 
+ Expansion device outlet,            52.309,            87.962,               98.185,                       52.309,           7.7,            0.000,           0.000,   Expansion device outlet
+ Evaporator inlet       ,            50.501,            84.910,               98.185,                       50.501,           8.2,            0.000,           0.000,   Evaporator inlet       
+ Evaporator outlet      ,            58.328,            83.763,              177.217,                       49.814,         100.0,            0.000,           8.514,   Evaporator outlet      
+ 
+********* Air Side Data *********
+ 
+ Location         ,   Dry bulb temperature (F),   Wet bulb temperature (F),   Relative Humidity (%),       Volumetric flow rate (CFM),   Pressure Drop (in-H2O),   Location         
+ Condenser air inlet  ,                     71.300,                     64.483,                    69.6,                         3500.000,                    0.000, Condenser air inlet  
+ Condenser air outlet ,                     77.894,                     66.639,                    55.9,                         3500.000,                    0.053, Condenser air outlet 
+ Evaporator air inlet ,                     76.738,                     55.164,                    22.4,                          990.000,                    0.000, Evaporator air inlet 
+ Evaporator air outlet,                     56.509,                     46.374,                    45.2,                          990.000,                    0.046, Evaporator air outlet
+ 
+***** Optimization Outputs ******
+ 
+Evaporator Air Enthalpy          ,                                  24.666,          kJ/kg
+Evaporator Air Humidity Ratio    ,                                 0.00435,               
+Compressor Input Ratio           ,                                 0.80000,               
+ 
+********* Pressure Drop *********
+ 
+ Accumulator                     ,                                   0.000, (psi)         
+ Filter Drier                    ,                                   0.000, (psi)         
+ 
+*********** Material ************
+ 
+ Aluminum Evaporator             ,                                   7.434, (lbm)         
+ Aluminum Condenser              ,                                  23.569, (lbm)         
+ Copper Evaporator               ,                                   7.631, (lbm)         
+ Copper Condenser                ,                                  17.444, (lbm)         
+ Copper Suction Line             ,                                   0.912, (lbm)         
+ Copper Discharge Line           ,                                   0.233, (lbm)         
+ Copper Valve-Indoor Coil Line   ,                                   7.600, (lbm)         
+ Copper Valve-Outdoor Coil Line  ,                                   0.456, (lbm)         
+ Copper Liquid Line              ,                                   1.482, (lbm)         
+ 
+*** Refrigerant Distributions ***
+ 
+ Condenser liquid length         ,                                1155.398, (ft)          
+ Condenser two-phase length      ,                                 472.671, (ft)          
+ Condenser vapor length          ,                                  54.400, (ft)          
+ Evaporator two-phase length     ,                                  16.000, (ft)          
+ Evaporator vapor length         ,                                  14.508, (ft)          
+ 
+*** Frost Parameters ***
+ 
+ Evaporator Tube Area            ,                                   1.232, (-)           
+ Evaporator Fin Area             ,                                  13.540, (-)           
+ Evaporator Total Area           ,                                  14.772, (-)           
+ Evaporator Bare Area            ,                                   1.345, (-)           
+ Evaporator Min Area             ,                                   0.245, (-)           
+ Condenser Tube Area             ,                                   2.752, (-)           
+ Condenser Fin Area              ,                                  45.319, (-)           
+ Evaporator Surface Temperature  ,                                  32.829, (-)           
+ YorkHP.out successfully written

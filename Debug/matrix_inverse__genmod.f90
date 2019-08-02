@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Jun 30 11:26:02 2018
+        MODULE MATRIX_INVERSE__genmod
+          INTERFACE 
+            SUBROUTINE MATRIX_INVERSE(A,AINV,N)
+              INTEGER(KIND=4) :: N
+              REAL(KIND=4) :: A(N,N)
+              REAL(KIND=4) :: AINV(N,N)
+            END SUBROUTINE MATRIX_INVERSE
+          END INTERFACE 
+        END MODULE MATRIX_INVERSE__genmod

@@ -1,0 +1,698 @@
+!group OverallSimData
+
+Model,
+    THGD36S41S1;
+
+MainDesignData,
+    False, !field SI Units Flag
+    3, !1, !field Calculation Mode
+    2, !field System Type
+    TRUE, !field Is in Cooling Mode
+    R22, !field Refrigerant Name
+    87.5, !94.5, !field Outdoor Entering Drybulb Temperature [°F]
+    73, !72.8, !field Outdoor Entering Wetbulb Temperature [°F]
+    68, !80, !field Indoor Entering Drybulb Temperature [°F]
+    67.2, !67, !field Indoor Entering Wetbulb Temperature [°F]
+    7; !field Design Refrigerant Charge Mass [lbm]
+
+CompressorData,
+    ZR24K3:PFV, !field Compressor Model
+    Copeland, !field Compressor Manufacturer
+    0, !field Compressor Heat Loss Fraction [-]
+    0, !field Compressor Heat Loss [Btu/h]
+    0, !field Compressor Volume [in³]	!RS: Testing: Replaced 0 with 150
+    333.7336426, !field Compressor Mass Coefficient 1[-]
+    6.6371639, !field Compressor Mass Coefficient 2[-]
+    -6.098874092, !field Compressor Mass Coefficient 3[-]
+    0.050022129, !field Compressor Mass Coefficient 4[-]
+    -0.071752422, !field Compressor Mass Coefficient 5[-]
+    0.070263386, !field Compressor Mass Coefficient 6[-]
+    2.58457E-05, !field Compressor Mass Coefficient 7[-]
+    -0.000210267, !field Compressor Mass Coefficient 8[-]
+    0.000422773, !field Compressor Mass Coefficient 9[-]
+    -0.000280805, !field Compressor Mass Coefficient 10[-]
+    79.16765594, !field Compressor Power Coefficient 1[-]
+    -5.255866051, !field Compressor Power Coefficient 2[-]
+    21.21982384, !field Compressor Power Coefficient 3[-]
+    0.013738766, !field Compressor Power Coefficient 4[-]
+    0.096556038, !field Compressor Power Coefficient 5[-]
+    -0.163337499, !field Compressor Power Coefficient 6[-]
+    -0.000174137, !field Compressor Power Coefficient 7[-]
+    -6.01738E-05, !field Compressor Power Coefficient 8[-]
+    -0.000574155, !field Compressor Power Coefficient 9[-]
+    0.00103036, !field Compressor Power Coefficient 10[-]
+    0.915, !1, !field Power Multiplier [-]
+    0.97, !1, !field Mass Flow Rate Multiplier [-]
+    50.079, !field User Specified Rating Evap. Temperature [°F]
+    109.9, !field User Specified Rating Cond. Temperature [°F]
+    11.6, !field User Specified Rating Subcooling [R]
+    8.4; !field User Specified Rating Superheat [R]
+
+OutdoorCoilData, !Condenser
+    2, !field Fin Type
+    Sinewave, !field Fin Name
+    20, !field Fin Pitch [FPI]
+    1539, !field Fin Conductivity [Btu.in/h.ft².F]
+    6, !field Fin thickness [thou]
+    5, !2, !field Tube Type
+    0.252, !field Tube ID [in]
+    0.276, !field Tube OD [in]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.472, !field Tube Lateral Spacing [in]
+    0.827, !field Tube Vertical Spacing [in]
+    2, !field Number of Rows
+    38, !field Number of Tubes Per Row
+    8, !field Number of Circuits
+    10, !field Number of Segments
+    70.5, !field Single Tube Length [in]
+    1, !field Ref Side Heat Transfer Multiplier [-]
+    1, !field Ref Side Pressure Drop Multiplier [-]
+    1, !field Air Side Heat Transfer Multiplier [-]
+    1; !field Air Side Pressure Drop Multiplier [-]
+
+OutdoorFanData,
+    200, !field Fan Power [W]
+    3350, !field Fan Air Flow Rate [cfm]
+    1, !; !field Draw Through (1) or Blow Through (2) [-]
+    0.8, !field Motor Efficiency
+    0.8, !field Fan Efficiency
+    10, !field Delta Pressure across Fan (Pa)
+    0.5; !field Motor in Air Fraction
+
+IndoorCoilData,
+    2, !field Fin Type
+    Sinewave, !field Fin Name
+    14, !field Fin Pitch [FPI]
+    1539, !field Fin Conductivity [Btu.in/h.ft².F]
+    6, !field Fin Thickness [thou]
+    5, !2, !field Tube Type
+    0.252, !field Tube ID [in]
+    0.276, !field Tube OD [in]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.472, !field Tube Lateral Spacing [in]
+    0.827, !field Tube Vertical Spacing [in]
+    3, !field Number of Rows
+    24, !field Number of Tubes Per Row
+    12, !field Number of Circuits
+    10, !field Number of Segments
+    32, !field Single Tube Length [in]
+    1, !field Ref Side Heat Transfer Multiplier [-]
+    1, !field Ref Side Pressure Drop Multiplier [-]
+    1, !field Air Side Heat Transfer Multiplier [-]
+    1; !field Air Side Pressure Drop Multiplier [-]
+
+IndoorFanData,
+    200, !field Fan Power [W]
+    990, !field Fan Air Flow Rate [cfm]
+    1, !; !field Draw Through (1) or Blow Through (2) [-]
+    0.8, !field Motor Efficiency
+    0.8, !field Fan Efficiency
+    10, !field Delta Pressure across Fan (Pa)
+    0.5; !field Motor in Air Fraction
+
+ExpansionDeviceData,
+    TXV, !field Expansion Device Type (Cooling)
+    TXV, !field Expansion Device Type (Heating)
+    !--- Short Tube Orifice ---
+    0.5, !field Short Tube Length (Cooling) [in]
+    0.069, !0.067, !field Short Tube Diameter (Cooling) [in]
+    0, !field Short Tube Chamfer Depth (Cooling) [in]
+    0.5, !field Short Tube Length (Heating) [in]
+    0.046, !field Short Tube Diameter (Heating) [in]
+    0, !field Short Tube Chamfer Depth (Heating) [in]
+    !--- Capillary Tube---
+    12, !field Capillary Tube Length (Cooling) [in]
+    0.078, !field Capillary Tube Diameter (Cooling) [in]
+    1.5, !field Capillary Tube Coil Diameter (Cooling) [in]
+    12, !field Capillary Tube Length (Heating) [in]
+    0.059, !field Capillary Tube Diameter (Heating) [in]
+    1.5, !field Capillary Tube Coil Diameter (Heating) [in]
+    !--- Distributor ---
+    24, !Distributor Tube Length (Cooling) [in]
+    24; !Distributor Tube Length (Heating) [in]
+ 
+RefrigerantLineData,
+    Compressor Suction, !field Refrigerant Line
+    Copper: 3/4 in 0.035 thick, !field Tube Type
+    3, !field Refrigerant Line Length [ft]
+    0, !field Refrigerant Line Elevation [ft]
+    0, !field Refrigerant Line Heat Loss [Btu/h]
+    0, !field Refrigerant Line Temperature Change [R]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.68, !field Tube Inside Diameter [in]
+    0.75, !field Tube Outside Diameter [in]
+    0, !field Additional Pressure Drop [psig]
+    0, !field Charge in Line [lbm]
+    Compressor Discharge, !field Refrigerant Line
+    Copper: 1/2 in 0.027 thick, !field Tube Type
+    1.5, !field Refrigerant Line Length [ft]
+    0, !field Refrigerant Line Elevation [ft]
+    0, !field Refrigerant Line Heat Loss [Btu/h]
+    0, !field Refrigerant Line Temperature Change [R]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.446, !field Tube Inside Diameter [in]
+    0.5, !field Tube Outside Diameter [in]
+    0, !field Additional Pressure Drop [psig]
+    0, !field Charge in Line [lbm]
+    Liquid Line, !field Refrigerant Line
+    Copper: 3/8 in 0.012 thick, !field Tube Type
+    28, !field Refrigerant Line Length [ft]
+    0, !field Refrigerant Line Elevation [ft]
+    0, !field Refrigerant Line Heat Loss [Btu/h]
+    0, !field Refrigerant Line Temperature Change [R]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.351, !field Tube Inside Diameter [in]
+    0.375, !field Tube Outside Diameter [in]
+    0, !field Additional Pressure Drop [psig]
+    0, !field Charge in Line [lbm]
+    Reversing Valve to IDC, !field Refrigerant Line
+    Copper: 3/4 in 0.035 thick, !field Tube Type
+    25, !field Refrigerant Line Length [ft]
+    0, !field Refrigerant Line Elevation [ft]
+    0, !field Refrigerant Line Heat Loss [Btu/h]
+    0, !field Refrigerant Line Temperature Change [R]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.68, !field Tube Inside Diameter [in]
+    0.75, !field Tube Outside Diameter [in]
+    0, !field Additional Pressure Drop [psig]
+    0, !field Charge in Line [lbm]
+    Reversing Valve to ODC, !field Refrigerant Line
+    Copper: 3/4 in 0.035 thick, !field Tube Type
+    1.5, !field Refrigerant Line Length [ft]
+    0, !field Refrigerant Line Elevation [ft]
+    0, !field Refrigerant Line Heat Loss [Btu/h]
+    0, !field Refrigerant Line Temperature Change [R]
+    2724, !field Tube Conductivity [Btu.in/h.ft².F]
+    0.68, !field Tube Inside Diameter [in]
+    0.75, !field Tube Outside Diameter [in]
+    0; !field Additional Pressure Drop [psig]
+
+RefrigerantCycleData(Heating),
+    14.696, !field Barometric Pressure [psig]
+    0; !field Is Compressor in Air Stream [-]
+
+AccumulatorData,
+    0, !field Height [in]
+    0, !field Diameter [in]
+    0.035, !field Upper Hole Diameter [in]
+    0.035, !field Lower Hole Diameter [in]
+    0, !field Rating Pressure Drop [psig]
+    0, !field Hole Distance [in]
+    0, !field Rating Temperature Drop [R]
+    0, !field Coefficient-M [-]
+    0; !field Coefficient-B [-]
+
+FilterDrierData,
+    0, !field Flow Capacity [tons]
+    0; !field Rating Pressure Drop [psig]
+
+ChargeTuningCurve,
+    FALSE, !field Is Charge Tuning
+    0, !field Tuning Point #1 Simulated Charge
+    0, !field Tuning Point #1 Liquid Length
+    0, !field Tuning Point #2 Simulated Charge
+    0; !field Tuning Point #2 Liquid Length
+
+!group IDCckt
+
+IDCcktModel,
+    Fin-Tube Coil;
+
+IDCcktGeometry,
+    False, !SI Units Flag
+    2, !Fin Type
+    Sinewave, !Fin Name
+    14, !Fin Pitch [FPI]
+    1539, !Fin Conductivity [Btu.in/h.ft².F]
+    6, !Fin Thickness [thou]
+    Aluminum, !Fin Material
+    5, !2, !Tube Type
+    .012 Rifled, !Tube Name
+    0.276, !Tube OD [in]
+    0.252, !Tube ID [in]
+    2724, !Tube Conductivity [Btu.in/h.ft².F]
+    0.827, !Tube Vertical Spacing [in]
+    0.47, !Tube Horizontal Spacing [in]
+    3, !Number of Rows
+    24, !Number of Tubes per Row
+    32, !Single Tube Length
+    10, !Number of Segments
+    12, !Number of Circuits
+    True; !Tube Shift Flag
+
+IDCcktCircuiting_TubeNumbers,
+    6, !Number of Tubes in Circuit 1
+    6, !Number of Tubes in Circuit 2
+    6, !Number of Tubes in Circuit 3
+    6, !Number of Tubes in Circuit 4
+    6, !Number of Tubes in Circuit 5
+    6, !Number of Tubes in Circuit 6
+    6, !Number of Tubes in Circuit 7
+    6, !Number of Tubes in Circuit 8
+    6, !Number of Tubes in Circuit 9
+    6, !Number of Tubes in Circuit 10
+    6, !Number of Tubes in Circuit 11
+    6; !Number of Tubes in Circuit 12
+
+IDCcktCircuit1_TubeSequence,
+    4, !Tube Number
+    1, !Tube Number
+    3, !Tube Number
+    6, !Tube Number
+    8, !Tube Number
+    2; !Tube Number
+
+IDCcktCircuit2_TubeSequence,
+    10, !Tube Number
+    7, !Tube Number
+    9, !Tube Number
+    12, !Tube Number
+    11, !Tube Number
+    8; !Tube Number
+
+IDCcktCircuit3_TubeSequence,
+    61, !Tube Number
+    13, !Tube Number
+    15, !Tube Number
+    18, !Tube Number
+    17, !Tube Number
+    14; !Tube Number
+
+IDCcktCircuit4_TubeSequence,
+    22, !Tube Number
+    19, !Tube Number
+    21, !Tube Number
+    24, !Tube Number
+    23, !Tube Number
+    20; !Tube Number
+
+IDCcktCircuit5_TubeSequence,
+    28, !Tube Number
+    25, !Tube Number
+    27, !Tube Number
+    30, !Tube Number
+    29, !Tube Number
+    26; !Tube Number
+
+IDCcktCircuit6_TubeSequence,
+    34, !Tube Number
+    31, !Tube Number
+    33, !Tube Number
+    36, !Tube Number
+    35, !Tube Number
+    32; !Tube Number
+
+IDCcktCircuit7_TubeSequence,
+    40, !Tube Number
+    37, !Tube Number
+    39, !Tube Number
+    42, !Tube Number
+    41, !Tube Number
+    38; !Tube Number
+
+IDCcktCircuit8_TubeSequence,
+    46, !Tube Number
+    43, !Tube Number
+    45, !Tube Number
+    48, !Tube Number
+    47, !Tube Number
+    44; !Tube Number
+
+IDCcktCircuit9_TubeSequence,
+    52, !Tube Number
+    49, !Tube Number
+    51, !Tube Number
+    54, !Tube Number
+    53, !Tube Number
+    50; !Tube Number
+
+IDCcktCircuit10_TubeSequence,
+    58, !Tube Number
+    55, !Tube Number
+    57, !Tube Number
+    60, !Tube Number
+    59, !Tube Number
+    56; !Tube Number
+
+IDCcktCircuit11_TubeSequence,
+    64, !Tube Number
+    61, !Tube Number
+    63, !Tube Number
+    66, !Tube Number
+    65, !Tube Number
+    62; !Tube Number
+
+IDCcktCircuit12_TubeSequence,
+    70, !Tube Number
+    67, !Tube Number
+    69, !Tube Number
+    72, !Tube Number
+    71, !Tube Number
+    68; !Tube Number
+
+IDCcktVelocityProfile,
+    1, !Velocity Deviation from Mean Value for Tube 1
+    1, !Velocity Deviation from Mean Value for Tube 2
+    1, !Velocity Deviation from Mean Value for Tube 3
+    1, !Velocity Deviation from Mean Value for Tube 4
+    1, !Velocity Deviation from Mean Value for Tube 5
+    1, !Velocity Deviation from Mean Value for Tube 6
+    1, !Velocity Deviation from Mean Value for Tube 7
+    1, !Velocity Deviation from Mean Value for Tube 8
+    1, !Velocity Deviation from Mean Value for Tube 9
+    1, !Velocity Deviation from Mean Value for Tube 10
+    1, !Velocity Deviation from Mean Value for Tube 11
+    1, !Velocity Deviation from Mean Value for Tube 12
+    1, !Velocity Deviation from Mean Value for Tube 13
+    1, !Velocity Deviation from Mean Value for Tube 14
+    1, !Velocity Deviation from Mean Value for Tube 15
+    1, !Velocity Deviation from Mean Value for Tube 16
+    1, !Velocity Deviation from Mean Value for Tube 17
+    1, !Velocity Deviation from Mean Value for Tube 18
+    1, !Velocity Deviation from Mean Value for Tube 19
+    1, !Velocity Deviation from Mean Value for Tube 20
+    1, !Velocity Deviation from Mean Value for Tube 21
+    1, !Velocity Deviation from Mean Value for Tube 22
+    1, !Velocity Deviation from Mean Value for Tube 23
+    1, !Velocity Deviation from Mean Value for Tube 24
+    1, !Velocity Deviation from Mean Value for Tube 25
+    1, !Velocity Deviation from Mean Value for Tube 26
+    1, !Velocity Deviation from Mean Value for Tube 27
+    1, !Velocity Deviation from Mean Value for Tube 28
+    1, !Velocity Deviation from Mean Value for Tube 29
+    1, !Velocity Deviation from Mean Value for Tube 30
+    1, !Velocity Deviation from Mean Value for Tube 31
+    1, !Velocity Deviation from Mean Value for Tube 32
+    1, !Velocity Deviation from Mean Value for Tube 33
+    1, !Velocity Deviation from Mean Value for Tube 34
+    1, !Velocity Deviation from Mean Value for Tube 35
+    1, !Velocity Deviation from Mean Value for Tube 36
+    1, !Velocity Deviation from Mean Value for Tube 37
+    1, !Velocity Deviation from Mean Value for Tube 38
+    1, !Velocity Deviation from Mean Value for Tube 39
+    1, !Velocity Deviation from Mean Value for Tube 40
+    1, !Velocity Deviation from Mean Value for Tube 41
+    1, !Velocity Deviation from Mean Value for Tube 42
+    1, !Velocity Deviation from Mean Value for Tube 43
+    1, !Velocity Deviation from Mean Value for Tube 44
+    1, !Velocity Deviation from Mean Value for Tube 45
+    1, !Velocity Deviation from Mean Value for Tube 46
+    1, !Velocity Deviation from Mean Value for Tube 47
+    1, !Velocity Deviation from Mean Value for Tube 48
+    1, !Velocity Deviation from Mean Value for Tube 49
+    1, !Velocity Deviation from Mean Value for Tube 50
+    1, !Velocity Deviation from Mean Value for Tube 51
+    1, !Velocity Deviation from Mean Value for Tube 52
+    1, !Velocity Deviation from Mean Value for Tube 53
+    1, !Velocity Deviation from Mean Value for Tube 54
+    1, !Velocity Deviation from Mean Value for Tube 55
+    1, !Velocity Deviation from Mean Value for Tube 56
+    1, !Velocity Deviation from Mean Value for Tube 57
+    1, !Velocity Deviation from Mean Value for Tube 58
+    1, !Velocity Deviation from Mean Value for Tube 59
+    1, !Velocity Deviation from Mean Value for Tube 60
+    1, !Velocity Deviation from Mean Value for Tube 61
+    1, !Velocity Deviation from Mean Value for Tube 62
+    1, !Velocity Deviation from Mean Value for Tube 63
+    1, !Velocity Deviation from Mean Value for Tube 64
+    1, !Velocity Deviation from Mean Value for Tube 65
+    1, !Velocity Deviation from Mean Value for Tube 66
+    1, !Velocity Deviation from Mean Value for Tube 67
+    1, !Velocity Deviation from Mean Value for Tube 68
+    1, !Velocity Deviation from Mean Value for Tube 69
+    1, !Velocity Deviation from Mean Value for Tube 70
+    1, !Velocity Deviation from Mean Value for Tube 71
+    1; !Velocity Deviation from Mean Value for Tube 72
+
+IDCcktCoefficients,
+    !V=C0+C1*H+C2*H^2+C3*H^3 for segment 1
+    1, !field C0
+    0, !field C1
+    0, !field C2
+    0; !field C3
+
+IDCcktVelocityProfileRawData,
+    !All for segment 1
+    6, !field No. of Data
+    0, !field Coil Height Data Entry #1
+    0.2, !field Coil Height Data Entry #2
+    0.4, !field Coil Height Data Entry #3
+    0.6, !field Coil Height Data Entry #4
+    0.8, !field Coil Height Data Entry #5
+    1, !field Coil Height Data Entry #6
+    1, !field Velocity Data Entry #1
+    1, !field Velocity Data Entry #2
+    1, !field Velocity Data Entry #3
+    1, !field Velocity Data Entry #4
+    1, !field Velocity Data Entry #5
+    1; !field Velocity Data Entry #6
+
+!group ODCckt
+
+ODCcktModel,
+    Fin-Tube Coil;
+
+ODCcktGeometry,
+    False, !SI Units Flag
+    2, !Fin Type
+    Sinewave, !Fin Name
+    20, !Fin Pitch [FPI]
+    1539, !Fin Conductivity [Btu.in/h.ft².F]
+    6, !Fin Thickness [thou]
+    Aluminum, !Fin Material
+    5, !2, !Tube Type
+    .012 Rifled, !Tube Name
+    0.276, !Tube OD [in]
+    0.252, !Tube ID [in]
+    2724, !Tube Conductivity [Btu.in/h.ft².F]
+    0.827, !Tube Vertical Spacing [in]
+    0.472, !Tube Horizontal Spacing [in]	!RS: Testing: Was 0 before
+    2, !Number of Rows
+    38, !Number of Tubes per Row
+    70.5, !Single Tube Length [in]
+    10, !Number of Segments
+    9, !Number of Circuits
+    False; !Tube Shift Flag
+
+ODCcktCircuiting_TubeNumbers,
+    8, !Number of Tubes in Circuit 1
+    8, !Number of Tubes in Circuit 2
+    8, !Number of Tubes in Circuit 3
+    8, !Number of Tubes in Circuit 4
+    8, !Number of Tubes in Circuit 5
+    8, !Number of Tubes in Circuit 6
+    8, !Number of Tubes in Circuit 7
+    8, !Number of Tubes in Circuit 8
+    12; !Number of Tubes in Circuit 9
+
+ODCcktCircuit1_TubeSequence,
+    8, !Tube Number
+    6, !Tube Number
+    4, !Tube Number
+    2, !Tube Number
+    1, !Tube Number
+    3, !Tube Number
+    5, !Tube Number
+    7; !Tube Number
+
+ODCcktCircuit2_TubeSequence,
+    16, !Tube Number
+    14, !Tube Number
+    12, !Tube Number
+    10, !Tube Number
+    9, !Tube Number
+    11, !Tube Number
+    13, !Tube Number
+    15; !Tube Number
+
+ODCcktCircuit3_TubeSequence,
+    24, !Tube Number
+    22, !Tube Number
+    20, !Tube Number
+    18, !Tube Number
+    17, !Tube Number
+    19, !Tube Number
+    21, !Tube Number
+    23; !Tube Number
+
+ODCcktCircuit4_TubeSequence,
+    32, !Tube Number
+    30, !Tube Number
+    28, !Tube Number
+    26, !Tube Number
+    25, !Tube Number
+    27, !Tube Number
+    39, !Tube Number
+    31; !Tube Number
+
+ODCcktCircuit5_TubeSequence,
+    40, !Tube Number
+    38, !Tube Number
+    36, !Tube Number
+    34, !Tube Number
+    33, !Tube Number
+    35, !Tube Number
+    38, !Tube Number
+    39; !Tube Number
+
+ODCcktCircuit6_TubeSequence,
+    48, !Tube Number
+    46, !Tube Number
+    44, !Tube Number
+    42, !Tube Number
+    41, !Tube Number
+    43, !Tube Number
+    45, !Tube Number
+    47; !Tube Number
+
+ODCcktCircuit7_TubeSequence,
+    56, !Tube Number
+    54, !Tube Number
+    52, !Tube Number
+    50, !Tube Number
+    49, !Tube Number
+    51, !Tube Number
+    53, !Tube Number
+    55; !Tube Number
+
+ODCcktCircuit8_TubeSequence,
+    64, !Tube Number
+    62, !Tube Number
+    60, !Tube Number
+    58, !Tube Number
+    57, !Tube Number
+    59, !Tube Number
+    61, !Tube Number
+    63; !Tube Number
+
+ODCcktCircuit9_TubeSequence,
+    68, !Tube Number
+    66, !Tube Number
+    65, !Tube Number
+    67, !Tube Number
+    69, !Tube Number
+    70, !Tube Number
+    72, !Tube Number
+    71, !Tube Number
+    73, !Tube Number
+    74, !Tube Number
+    76, !Tube Number
+    75; !Tube Number
+
+ODCcktVelocityProfile,
+    1, !Velocity Deviation from Mean Value for Tube 1
+    1, !Velocity Deviation from Mean Value for Tube 2
+    1, !Velocity Deviation from Mean Value for Tube 3
+    1, !Velocity Deviation from Mean Value for Tube 4
+    1, !Velocity Deviation from Mean Value for Tube 5
+    1, !Velocity Deviation from Mean Value for Tube 6
+    1, !Velocity Deviation from Mean Value for Tube 7
+    1, !Velocity Deviation from Mean Value for Tube 8
+    1, !Velocity Deviation from Mean Value for Tube 9
+    1, !Velocity Deviation from Mean Value for Tube 10
+    1, !Velocity Deviation from Mean Value for Tube 11
+    1, !Velocity Deviation from Mean Value for Tube 12
+    1, !Velocity Deviation from Mean Value for Tube 13
+    1, !Velocity Deviation from Mean Value for Tube 14
+    1, !Velocity Deviation from Mean Value for Tube 15
+    1, !Velocity Deviation from Mean Value for Tube 16
+    1, !Velocity Deviation from Mean Value for Tube 17
+    1, !Velocity Deviation from Mean Value for Tube 18
+    1, !Velocity Deviation from Mean Value for Tube 19
+    1, !Velocity Deviation from Mean Value for Tube 20
+    1, !Velocity Deviation from Mean Value for Tube 21
+    1, !Velocity Deviation from Mean Value for Tube 22
+    1, !Velocity Deviation from Mean Value for Tube 23
+    1, !Velocity Deviation from Mean Value for Tube 24
+    1, !Velocity Deviation from Mean Value for Tube 25
+    1, !Velocity Deviation from Mean Value for Tube 26
+    1, !Velocity Deviation from Mean Value for Tube 27
+    1, !Velocity Deviation from Mean Value for Tube 28
+    1, !Velocity Deviation from Mean Value for Tube 29
+    1, !Velocity Deviation from Mean Value for Tube 30
+    1, !Velocity Deviation from Mean Value for Tube 31
+    1, !Velocity Deviation from Mean Value for Tube 32
+    1, !Velocity Deviation from Mean Value for Tube 33
+    1, !Velocity Deviation from Mean Value for Tube 34
+    1, !Velocity Deviation from Mean Value for Tube 35
+    1, !Velocity Deviation from Mean Value for Tube 36
+    1, !Velocity Deviation from Mean Value for Tube 37
+    1, !Velocity Deviation from Mean Value for Tube 38
+    1, !Velocity Deviation from Mean Value for Tube 39
+    1, !Velocity Deviation from Mean Value for Tube 40
+    1, !Velocity Deviation from Mean Value for Tube 41
+    1, !Velocity Deviation from Mean Value for Tube 42
+    1, !Velocity Deviation from Mean Value for Tube 43
+    1, !Velocity Deviation from Mean Value for Tube 44
+    1, !Velocity Deviation from Mean Value for Tube 45
+    1, !Velocity Deviation from Mean Value for Tube 46
+    1, !Velocity Deviation from Mean Value for Tube 47
+    1, !Velocity Deviation from Mean Value for Tube 48
+    1, !Velocity Deviation from Mean Value for Tube 49
+    1, !Velocity Deviation from Mean Value for Tube 50
+    1, !Velocity Deviation from Mean Value for Tube 51
+    1, !Velocity Deviation from Mean Value for Tube 52
+    1, !Velocity Deviation from Mean Value for Tube 53
+    1, !Velocity Deviation from Mean Value for Tube 54
+    1, !Velocity Deviation from Mean Value for Tube 55
+    1, !Velocity Deviation from Mean Value for Tube 56
+    1, !Velocity Deviation from Mean Value for Tube 57
+    1, !Velocity Deviation from Mean Value for Tube 58
+    1, !Velocity Deviation from Mean Value for Tube 59
+    1, !Velocity Deviation from Mean Value for Tube 60
+    1, !Velocity Deviation from Mean Value for Tube 61
+    1, !Velocity Deviation from Mean Value for Tube 62
+    1, !Velocity Deviation from Mean Value for Tube 63
+    1, !Velocity Deviation from Mean Value for Tube 64
+    1, !Velocity Deviation from Mean Value for Tube 65
+    1, !Velocity Deviation from Mean Value for Tube 66
+    1, !Velocity Deviation from Mean Value for Tube 67
+    1, !Velocity Deviation from Mean Value for Tube 68
+    1, !Velocity Deviation from Mean Value for Tube 69
+    1, !Velocity Deviation from Mean Value for Tube 70
+    1, !Velocity Deviation from Mean Value for Tube 71
+    1, !Velocity Deviation from Mean Value for Tube 72
+    1, !Velocity Deviation from Mean Value for Tube 73
+    1, !Velocity Deviation from Mean Value for Tube 74
+    1, !Velocity Deviation from Mean Value for Tube 75
+    1; !Velocity Deviation from Mean Value for Tube 76
+
+ODCcktCoefficients,
+    !V=C0+C1*H+C2*H^2+C3*H^3 for segment 1
+    1, !C0
+    0, !C1
+    0, !C2
+    0; !C3
+
+ODCcktVelocityProfileRawData,
+    !All for segment 1
+    6, !No. of Data
+    0, !Coil Height Data Entry #1
+    0.2, !Coil Height Data Entry #2
+    0.4, !Coil Height Data Entry #3
+    0.6, !Coil Height Data Entry #4
+    0.8, !Coil Height Data Entry #5
+    1, !Coil Height Data Entry #6
+    1, !Velocity Data Entry #1
+    1, !Velocity Data Entry #2
+    1, !Velocity Data Entry #3
+    1, !Velocity Data Entry #4
+    1, !Velocity Data Entry #5
+    1; !Velocity Data Entry #6
+
+!Group Fluid Properties
+
+FluidNames,
+    R22, REFRIGERANT; !,     !- name and type for fluid 1
+    !R134a, REFRIGERANT,   !- name and type for fluid 2
+    !R407c, REFRIGERANT,   !- name and type for fluid 3
+    !R410a, REFRIGERANT;   !- name and type for fluid 4
+    !R417a, REFRIGERANT,   !- name and type for fluid 5
+    !PROPANE, REFRIGERANT; !- name and type for fluid 6
+    
+##include fluidDataFiles\R22.idf
+!##include fluidDataFiles\R134a.idf
+!##include fluidDataFiles\R407c.idf
+!##include fluidDataFiles\R410a.idf
+!##include fluidDataFiles\R417a.idf
+!##include fluidDataFiles\Propane.idf

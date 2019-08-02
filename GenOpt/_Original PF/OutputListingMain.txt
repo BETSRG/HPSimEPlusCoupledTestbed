@@ -1,0 +1,26 @@
+GenOpt(R) Version 3.1.0, December 8, 2011
+
+Lawrence Berkeley National Laboratory
+http://simulationresearch.lbl.gov
+Michael Wetter, MWetter@lbl.gov
+
+GenOpt Copyright (c) 1998-2011, The Regents of the
+University of California, through Lawrence Berkeley
+National Laboratory (subject to receipt of any 
+required approvals from the U.S. Dept. of Energy).
+All rights reserved.
+_______________________________________________________________
+
+Results of GPSHookeJeeves algorithm
+Start time: Fri Jul 26 14:52:20 CDT 2019
+
+Main Iterations
+
+
+Simulation Number	Main Iteration	Step Number	TotalPower	CompMdot
+1	1	1	12560.84	0.8	Initial point.
+2	2	1	1122.395	0.9	Global search reduced cost.
+2	3	1	1122.395	0.9	Iteration step did not reduce cost. Reduce step size to '0.5'.
+4	4	1	1063.677	0.85	Global search reduced cost.
+4	5	1	1063.677	0.85	Iteration step did not reduce cost. Maximum number of step reductions reached.
+4	5	1	1063.677	0.85	Minimum point.

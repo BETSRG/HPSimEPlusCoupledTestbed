@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Jun 30 11:27:57 2018
+        MODULE HUMRATIO__genmod
+          INTERFACE 
+            FUNCTION HUMRATIO(PW,BAROPRESSURE)
+              REAL(KIND=4) :: PW
+              REAL(KIND=4) :: BAROPRESSURE
+              REAL(KIND=4) :: HUMRATIO
+            END FUNCTION HUMRATIO
+          END INTERFACE 
+        END MODULE HUMRATIO__genmod

@@ -1,0 +1,14 @@
+HPSimVariables,                                                                                                                                                                                         
+1, !1, !Compressor Mass Flow Rate                                                                                                                                                              
+	!note This will be varied by the optimization engine                                                                                                                                                   
+3500, !%CndAirFlw%, !Condenser Air Flow Rate                                                                                                                                                            
+	!note This will be varied by the optimization engine                                                                                                                                                   
+990; !990; !Evaporator Air Flow Rate                                                                                                                                                                    
+	!note This will be varied by the optimization engine                                                                                                                                                   
+ VariablesToPass,
+  0.6965860     ,! XMaE
+   97900.00     ,! OutBaroPress
+   18.00208     ,! TWiC
+   21.83333     ,! TaiC
+   12.64505     ,! TWiE
+   24.76884     ;! TaiE

@@ -1,0 +1,28 @@
+GenOpt(R) Optimization Version 3.1.0, December 8, 2011
+
+Lawrence Berkeley National Laboratory
+http://simulationresearch.lbl.gov
+Michael Wetter, MWetter@lbl.gov
+
+GenOpt Copyright (c) 1998-2011, The Regents of the
+University of California, through Lawrence Berkeley
+National Laboratory (subject to receipt of any 
+required approvals from the U.S. Dept. of Energy).
+All rights reserved.
+
+The development of GenOpt is supported by
+the U.S. Department of Energy (DOE),
+the Swiss Academy of Engineering Sciences (SATW),
+the Swiss National Energy Fund (NEFF), and
+the Swiss National Science Foundation (SNSF).
+_______________________________________________________________
+
+Configuration file : C:\Users\lab303user\Desktop\HPSimProject\HPSimBuild\GenOpt\optWin7.ini
+Command file       : C:\Users\lab303user\Desktop\HPSimProject\HPSimBuild\GenOpt\command.txt
+
+Optimization started  at : Sat Jul 27 19:37:49 CDT 2019
+Optimization finished at : Sat Jul 27 19:38:15 CDT 2019
+Execution time           :            00:00:26
+_______________________________________________________________
+
+Optimization completed successfully.

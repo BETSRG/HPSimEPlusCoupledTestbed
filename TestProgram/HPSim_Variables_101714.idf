@@ -1,0 +1,11 @@
+HPSimVariables,
+1, !500, !Compressor Mass Flow Rate
+3350, !2800, !3350, !3500, !Condenser Air Flow Rate
+900; !990; !900; !Evaporator Air Flow Rate
+VariablesToPass,
+  0.5476326     ,! XMaE
+   100499.0     ,! OutBaroPress
+   22.75962     ,! RHiCAct
+   30.82500     ,! TaiC
+   17.53209     ,! RHiE
+   24.24943     ;! TaiE

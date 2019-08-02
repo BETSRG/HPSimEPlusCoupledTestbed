@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "HPSimBuild", "HPSimBuild.vfproj", "{F6A995E0-95FF-4F42-B118-9FE2092AB0EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6A995E0-95FF-4F42-B118-9FE2092AB0EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6A995E0-95FF-4F42-B118-9FE2092AB0EC}.Debug|Win32.Build.0 = Debug|Win32
+		{F6A995E0-95FF-4F42-B118-9FE2092AB0EC}.Release|Win32.ActiveCfg = Release|Win32
+		{F6A995E0-95FF-4F42-B118-9FE2092AB0EC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

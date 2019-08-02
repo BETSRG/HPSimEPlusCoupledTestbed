@@ -1,0 +1,18 @@
+     1 1, !1, !Compressor Mass Flow Rate
+     2  !note This will be varied by the optimization engine
+      ***** Tabs eliminated from above line
+     3 3500, !%CndAirFlw%, !Condenser Air Flow Rate
+     4  !note This will be varied by the optimization engine
+      ***** Tabs eliminated from above line
+     5 990; !990; !Evaporator Air Flow Rate
+     6  !note This will be varied by the optimization engine
+      ***** Tabs eliminated from above line
+     7  VariablesToPass,
+     8   0.6965860     ,! XMaE
+     9    97900.00     ,! OutBaroPress
+    10    18.00208     ,! TWiC
+    11    21.83333     ,! TaiC
+    12    12.64505     ,! TWiE
+    13    24.76884     ;! TaiE
+  Processing Input Data File (in.idf) -- Complete
+  Number of IDF "Lines"=         882

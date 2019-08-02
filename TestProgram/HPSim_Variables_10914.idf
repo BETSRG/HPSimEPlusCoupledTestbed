@@ -1,0 +1,7 @@
+HPSimVariables,
+1, !Compressor Capacity Input Ratio
+	!note This will be varied by the optimization engine
+2800, !3300, !3350, !Condenser Air Flow Rate
+	!note This will be varied by the optimization engine
+900; !990; !Evaporator Air Flow Rate
+	!note This will be varied by the optimization engine
